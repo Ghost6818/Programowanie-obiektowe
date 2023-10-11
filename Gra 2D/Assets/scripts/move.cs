@@ -11,6 +11,8 @@ public class move : MonoBehaviour
     [SerializeField]private float grounRange;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private bullet bulletPrefab;
+    [SerializeField] private Transform aim;
 
     void Update()
     {
@@ -24,6 +26,12 @@ public class move : MonoBehaviour
         if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
+
+        if (Input.GetButtonUp("Bullet"))
+        {
+            bullet bullet = Instantiate(bulletPrefab, aim.position, aim.rotation);
+            //clone.AddForce(fwd * 1500f);
         }
 
         Flip();

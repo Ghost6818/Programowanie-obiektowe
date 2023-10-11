@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class tunel : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        var player = other.gameObject.GetComponent<playerContlorer>();
+        var player = collision.gameObject.GetComponent<playerContlorer>();
         if (player != null)
         {
             SceneManager.LoadScene("SecendLevel");
