@@ -8,7 +8,8 @@ public class tunel : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         var player = collision.gameObject.GetComponent<playerContlorer>();
-        if (player != null)
+
+        if (player != null && player.points != false)
         {
             SceneManager.LoadScene("SecendLevel");
         }
