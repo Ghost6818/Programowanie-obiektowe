@@ -1,14 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UIElements.Experimental;
 
-public class playerContlorer : MonoBehaviour
+using UnityEngine;
+
+public class PlayerContlorer : MonoBehaviour
 {
 
-
-    public bool points = false;
-
+    public bool points { get; private set; } = false;
 
      public void AddPoint()
      {

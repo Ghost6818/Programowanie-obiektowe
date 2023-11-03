@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class move : MonoBehaviour
+public class Move : MonoBehaviour
 {
     private float horizontal;
     private float speed = 8f;
@@ -11,7 +11,7 @@ public class move : MonoBehaviour
     [SerializeField]private float grounRange;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private bullet bulletPrefab;
+    [SerializeField] private Bullet bulletPrefab;
     [SerializeField] private Transform aim;
 
     void Update()
@@ -30,8 +30,7 @@ public class move : MonoBehaviour
 
         if (Input.GetButtonUp("Bullet"))
         {
-            bullet bullet = Instantiate(bulletPrefab, aim.position, aim.rotation);
-            //clone.AddForce(fwd * 1500f);
+            Bullet bullet = Instantiate(bulletPrefab, aim.position, aim.rotation);
         }
 
         Flip();

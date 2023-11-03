@@ -1,10 +1,10 @@
-using UnityEditor.PackageManager;
+
 using UnityEngine;
 
-public class bullet : MonoBehaviour
+public class Bullet : MonoBehaviour
 {
-    public float bulletSpeed = 50f;
-    public Rigidbody2D rb;
+    private float bulletSpeed = 50f;
+    [SerializeField] private Rigidbody2D rb;
 
     void Start()
     {

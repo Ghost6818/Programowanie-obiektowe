@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using static Unity.Burst.Intrinsics.Arm;
 
-public class player : MonoBehaviour
+using UnityEngine;
+
+public class Player : MonoBehaviour
 {
-    [SerializeField] GameObject prefab;
+    [SerializeField] private GameObject prefab;
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
