@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerShoot : MonoBehaviour
 {
     [SerializeField] private GameObject prefab;
     private void Update()
