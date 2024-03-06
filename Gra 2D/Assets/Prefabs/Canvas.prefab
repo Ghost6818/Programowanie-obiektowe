@@ -220,7 +220,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7614574789314507250, guid: 4215811f26d693d43a095df7210e9ea6, type: 3}
       propertyPath: mapindex
-      value: 2
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8492679781839840397, guid: 4215811f26d693d43a095df7210e9ea6, type: 3}
       propertyPath: m_Name
