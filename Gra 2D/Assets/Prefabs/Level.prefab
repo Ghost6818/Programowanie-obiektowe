@@ -273,6 +273,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5898663577009710472}
+  - component: {fileID: 4752348377520889678}
   m_Layer: 5
   m_Name: Level
   m_TagString: Untagged
@@ -303,6 +304,19 @@ RectTransform:
   m_AnchoredPosition: {x: -1400.1167, y: -578.9397}
   m_SizeDelta: {x: 729.27014, y: 531.925}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &4752348377520889678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5306843286321700182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938f8903a708d324a8f2002ab0efb4d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mapindex: 1
 --- !u!1 &5955987074459132243
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,14 +437,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5955987074459132243}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 4752348377520889678}
+        m_TargetAssemblyTypeName: MenuOperator, Assembly-CSharp
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
