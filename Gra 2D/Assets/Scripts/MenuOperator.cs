@@ -6,10 +6,6 @@ public class MenuOperator : MonoBehaviour
 {
     [SerializeField] private int mapindex = 0;
 
-    void Awake()
-    {
-        gameObject.SetActive(false);
-    }
 
     public void StartGame()
     {
@@ -19,8 +15,18 @@ public class MenuOperator : MonoBehaviour
     {
         SceneChanger.Change(mapindex);
     }
-    public void ExitGame()
+    public void BackToManu()
     {
         SceneChanger.Change(0);
     }
+    public void ExitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+      Application.Quit();
+#endif
+
+    }
 }
+
