@@ -15,10 +15,7 @@ public class MenuOperator : MonoBehaviour
     {
         SceneChanger.Change(mapindex);
     }
-    public void BackToManu()
-    {
-        SceneChanger.Change(0);
-    }
+
     public void ExitGame()
     {
 #if UNITY_EDITOR
@@ -28,5 +25,6 @@ public class MenuOperator : MonoBehaviour
 #endif
 
     }
+
 }
 

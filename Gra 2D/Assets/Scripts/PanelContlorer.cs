@@ -20,5 +20,14 @@ public class PanelContlorer : MonoBehaviour
     public void SceneChange(int mapindex)
     {
         SceneChanger.Change(mapindex);
+
+    }
+    public void BackToManu()
+    {
+        SceneChanger.Change(0);
+    }
+    public void Restart()
+    {
+        SceneChanger.Reload();
     }
 }
