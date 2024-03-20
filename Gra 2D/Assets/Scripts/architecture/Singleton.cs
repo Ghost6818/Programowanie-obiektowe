@@ -10,6 +10,7 @@ public class Singleton : MonoBehaviour
 
     public static Singleton Instance { get; private set; }
 
+
     [SerializeField] private bool dontDestroyOnLOad = false;
     protected virtual void Awake()
     {
