@@ -9,4 +9,8 @@ public static class SceneChanger
     {
         SceneManager.LoadScene(mapindex);
     }
+    public static void Reload()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }

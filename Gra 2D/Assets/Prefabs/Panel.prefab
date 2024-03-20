@@ -195,10 +195,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 7614574789314507250}
         m_TargetAssemblyTypeName: PanelContlorer, Assembly-CSharp
-        m_MethodName: SceneChange
-        m_Mode: 3
+        m_MethodName: Restart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -633,7 +633,6 @@ GameObject:
   - component: {fileID: 4614383930395185214}
   - component: {fileID: 5291103559840460359}
   - component: {fileID: 8552530087630759429}
-  - component: {fileID: 7346453163931014813}
   - component: {fileID: 1195942223729774744}
   m_Layer: 5
   m_Name: menu
@@ -699,19 +698,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &7346453163931014813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7306832954246805290}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 938f8903a708d324a8f2002ab0efb4d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mapindex: 0
 --- !u!114 &1195942223729774744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -756,8 +742,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7346453163931014813}
-        m_TargetAssemblyTypeName: MenuOperator, Assembly-CSharp
+      - m_Target: {fileID: 7614574789314507250}
+        m_TargetAssemblyTypeName: PanelContlorer, Assembly-CSharp
         m_MethodName: BackToManu
         m_Mode: 1
         m_Arguments:
