@@ -3,16 +3,20 @@ using UnityEngine;
 
 public class PlayerShoot : MonoBehaviour
 {
-    [SerializeField] private GameObject prefab;
+    [SerializeField] private Bullet prefab;
+    [SerializeField] private Transform aim;
+    [SerializeField] private Move playerMoov;
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Bullet"))
         {
             Shoot();
         }
     }
     void Shoot()
     {
-        GameObject bullet = Instantiate(prefab, transform.position, Quaternion.identity);
+        Debug.Log("Hello Shoot");
+        Bullet bullet = Instantiate(prefab, aim.position, Quaternion.identity);
+        bullet.initBulletSide(playerMoov.IsFacingRight);
     }
 }

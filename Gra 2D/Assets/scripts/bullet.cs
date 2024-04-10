@@ -3,15 +3,10 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private float bulletSpeed = 50f;
+    [SerializeField] private float bulletSpeed = 50f;
     [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private SpriteRenderer spriteRenderer;
 
-    void Start()
-    {
-        rb.velocity = transform.right * bulletSpeed;
-        Destroy(gameObject, 3);
-
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -20,10 +15,17 @@ public class Bullet : MonoBehaviour
         BossBehaviour bossBehaviour = collision.gameObject.GetComponent<BossBehaviour>();
         if(playerContlorer != null || bossBehaviour != null)
         {
-            Destroy(collision.gameObject);
+           Destroy(collision.gameObject);
         }
         Destroy(gameObject);
 
+    }
+    public void initBulletSide(bool right)
+    {
+        Debug.Log("Hello position");
+        rb.velocity =  right? transform.right * bulletSpeed : -transform.right * bulletSpeed;
+        spriteRenderer.flipX = !right;
+        Destroy(gameObject, 3);
     }
 
 }
