@@ -99,7 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da68a30ee3f80794dba495414cd6ad03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletSpeed: 50
   rb: {fileID: 3477647154534146820}
+  spriteRenderer: {fileID: 5580405875090255790}
+  booletOwner: 1
 --- !u!58 &1137993462508000232
 CircleCollider2D:
   m_ObjectHideFlags: 0

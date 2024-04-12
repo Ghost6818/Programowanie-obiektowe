@@ -7,6 +7,8 @@ public class Move : MonoBehaviour
     private float jumpingPower = 16f;
     private bool isFacingRight = true;
 
+    public bool IsFacingRight => isFacingRight;
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField]private float grounRange;
     [SerializeField] private Transform groundCheck;
@@ -28,10 +30,6 @@ public class Move : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        if (Input.GetButtonUp("Bullet"))
-        {
-            Bullet bullet = Instantiate(bulletPrefab, aim.position, aim.rotation);
-        }
 
         Flip();
     }
