@@ -12,6 +12,8 @@ public class BossBehaviour : MonoBehaviour
     void SpamBullet(Transform aim)
     {
         Bullet bullet = Instantiate(bulletPrefab, aim.position, aim.rotation);
+        bullet.initBulletSide();
+
     }
     void Shoot()
     {

@@ -309,6 +309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 2735413720245345244, guid: 4851c47b90a539d45abf2fbb67acb0cf, type: 3}
+  aim: {fileID: 492738200014553151}
   playerMoov: {fileID: 3473814392949571886}
 --- !u!70 &4393446922223687070
 CapsuleCollider2D:
