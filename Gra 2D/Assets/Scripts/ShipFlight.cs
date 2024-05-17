@@ -24,5 +24,9 @@ public class ShipFlight : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.y, upwardForce);
         }
     }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
 
 }
